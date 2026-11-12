@@ -88,7 +88,7 @@ jobs:
           - {compiler: intel-classic, version: '2021.10'}
         generator: [Ninja]
         include:
-          - os: windows-latest
+          - os: windows-2022
             c_compiler: cl
             cpp_compiler: cl
           - os: ubuntu-latest
@@ -98,9 +98,9 @@ jobs:
             c_compiler: clang
             cpp_compiler: clang++
         exclude:
-          - os: windows-latest
+          - os: windows-2022
             c_compiler: gcc
-          - os: windows-latest
+          - os: windows-2022
             c_compiler: clang
           - os: ubuntu-latest
             c_compiler: cl
